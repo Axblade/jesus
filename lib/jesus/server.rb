@@ -1,6 +1,6 @@
 require 'sinatra/base'
-require 'jesus/interface'
-require 'jesus/server/helpers'
+require "jesus/interface"
+require "jesus/server/helpers"
 require 'json'
 
 module Jesus
@@ -9,9 +9,8 @@ module Jesus
     include Jesus::Helpers
     
     set :views, "#{dir}/server/views"
-    set :public, "#{dir}/server/public"
+    set :public_folder, "#{dir}/server/public"
     set :static, true
-    enable :sessions
     
     #
     # The home
