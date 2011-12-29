@@ -15,7 +15,7 @@ gem "sdoc-helpers"
 # Required only for tests
 #
 group :test do
-  gem "rspec", '~> 2.0.0.beta'
+  gem "rspec", '>= 2.7.0'
   gem "rack-test"
   gem "mocha"
 end

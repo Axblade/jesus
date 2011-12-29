@@ -1,6 +1,7 @@
-#!/usr/bin/env ruby
+dir = File.dirname(File.expand_path(__FILE__))
+
 require 'logger'
-require 'init'
+require "#{dir}/init"
 
 # We start the server
 use Rack::ShowExceptions
