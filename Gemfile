@@ -3,8 +3,6 @@ source 'http://rubygems.org'
 # Required on every environment
 #
 gem "sinatra", ">= 1.2.0"
-gem 'sinatra-redirect-with-flash'
-gem 'rack', "~> 1.1.0"
 gem "god"
 gem "json"
 gem "rdiscount"

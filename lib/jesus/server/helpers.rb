@@ -20,12 +20,14 @@ module Jesus
     def flash_tag(type)
       "<div id='flash'>#{session.delete(type)}</div>" unless session[type].nil?
     end
+    
     #
     # Defines a flash message
     #
     def flash(type, message)
       session[type] = message
     end
+    
     #
     # A confirmation, to be included in a link
     #

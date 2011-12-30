@@ -22,12 +22,16 @@ img { border: 0px; }
 	border-bottom:5px solid #ce1212;
 }
 #header ul {
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
+	width: 90%;
 }
+
 #header ul li {
-	display:inline;
+	display: inline;
+	margin: 0px auto;
 }
+
 #header ul li a {
 	color:#fff;
 	text-decoration:none;
@@ -54,6 +58,8 @@ img { border: 0px; }
 /*
 * The page itself
 */
+.content {min-height: 150px;}
+
 #page {
 	padding: 15px;
 }
@@ -62,10 +68,10 @@ img { border: 0px; }
  * The flash message
 */
 #flash {
-	width: 700px;
+	width: 90%;
 	text-align: center;
-	margin: 10px auto;
-  padding: 5px;
+	margin: 5px 5%;
+  	padding: 5px;
 	background-color: #FFCFD1;
 	border: 1px solid #FF000A;
 }
@@ -84,9 +90,9 @@ div.page_info p {
 	color: #6F6F6F;
 }
 div.page_info {
-	width: 700px;
+	width: 90%;
 	text-align: center;
-	margin: 0 auto;
+	margin: 5px 5%;
 	background-color: #D0CFFF;
 	border: 1px solid #0300FF;
 }
@@ -94,6 +100,11 @@ div.page_info {
 /*
 * The home page (processes  list)
 */
+div#processes {
+	width: 90%;
+	margin: 5px 5%;
+}
+
 div.group h2 { margin: 5px 30px; }
 div.group ul {
 	list-style-type: none;
@@ -101,10 +112,10 @@ div.group ul {
 }
 div.group li {
 	border: 1px solid #CCC;
-  height: 35px;
+  	height: 35px;
 }
 div.group li span.process {
-    margin: 10px;
+    margin: 5px;
     display: block;
     float: left;
 }
@@ -116,7 +127,7 @@ ul.links {
     list-style-type: none;
     margin: 5px;
     float: right;
-   clear: right;
+   	clear: right;
 }
 ul.links li {
     display: inline;
@@ -140,8 +151,8 @@ div#logs textarea {
  * The automatic update div
 */
 div#automatic_update {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+	width: 98%;
+	margin: 5px 1%;
+	text-align: right;
     color: #6F6F6F;
 }

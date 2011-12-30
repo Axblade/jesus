@@ -3,13 +3,10 @@ require "jesus/interface"
 require "jesus/server/helpers"
 require 'json'
 
-require 'rack-flash'
-require 'sinatra/redirect_with_flash'
 
 module Jesus
   class Server < Sinatra::Base
     include Jesus::Helpers
-    helpers Sinatra::RedirectWithFlash
     
     dir = File.dirname(File.expand_path(__FILE__))
     
@@ -17,7 +14,6 @@ module Jesus
     set :public_folder, "#{dir}/server/public"
     set :static, true
     
-    use Rack::Flash
     enable :sessions # required for flash
     
     
