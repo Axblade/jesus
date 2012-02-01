@@ -6,22 +6,18 @@ require 'json'
 
 module Jesus
   class Server < Sinatra::Base
-<<<<<<< HEAD
-=======
-    
->>>>>>> 43fd7e025e8c28ff87fd349b827776cf54068a58
+
     include Jesus::Helpers
     
     dir = File.dirname(File.expand_path(__FILE__))
     
-<<<<<<< HEAD
-    set :views, "#{dir}/server/views"
-    set :public_folder, "#{dir}/server/public"
-=======
     set :root, "#{dir}/server"
     set :views, Proc.new { File.join(root,"views") }
     set :public_folder, Proc.new { File.join(root,"public") }
->>>>>>> 43fd7e025e8c28ff87fd349b827776cf54068a58
+
+    set :root, "#{dir}/server"
+    set :views, Proc.new { File.join(root,"views") }
+    set :public_folder, Proc.new { File.join(root,"public") }
     set :static, true
     
     enable :sessions # required for flash
