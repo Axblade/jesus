@@ -5,11 +5,14 @@ require 'json'
 
 module Jesus
   class Server < Sinatra::Base
-    dir = File.dirname(File.expand_path(__FILE__))
+    
     include Jesus::Helpers
     
-    set :views, "#{dir}/server/views"
-    set :public, "#{dir}/server/public"
+    dir = File.dirname(File.expand_path(__FILE__))
+    
+    set :root, "#{dir}/server"
+    set :views, "#{root}/views"
+    set :public_folder, "#{root}/public"
     set :static, true
     enable :sessions
     
