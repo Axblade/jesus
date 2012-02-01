@@ -79,6 +79,12 @@ img { border: 0px; }
 /*
 * The common page info div
 */
+div.page_info {
+	width: 90%;
+	margin: 5px 5%;
+  	padding: 5px;
+}
+
 div.page_info h1 {
 	color: #FF0000;
 	margin: 0px;
@@ -150,9 +156,17 @@ div#logs textarea {
 /*
  * The automatic update div
 */
-div#automatic_update {
+footer#automatic_update {
 	width: 98%;
 	margin: 5px 1%;
 	text-align: right;
     color: #6F6F6F;
+}
+
+footer {
+	display: block;
+}
+
+header {
+	display: block;
 }

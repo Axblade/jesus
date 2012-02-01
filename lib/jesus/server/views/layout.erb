@@ -8,17 +8,17 @@
   	<script type="text/javascript" src="/js/application.js"></script>
 </head>
 	<body>
-		<div id="header">
-			<div id="automatic_update">Not automatically updated yet</div>
+		<header id="header">
 			<ul>
 				<%= tab 'Home', '/' %>
         		<%= tab 'Logs', '/logs' %>
 			</ul>
-		</div>
+		</header>
 		<div id="page">
       		<%= flash_tag(:notice) %>
       
 			<%= yield %>
 		</div>
+		<footer id="automatic_update">Not automatically updated yet.</footer>
 	</body>
 </html>
