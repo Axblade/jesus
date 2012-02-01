@@ -11,8 +11,8 @@ module Jesus
     dir = File.dirname(File.expand_path(__FILE__))
     
     set :root, "#{dir}/server"
-    set :views, Proc.new { File.join(root,"/views") }
-    set :public_folder, Proc.new { File.join(root,"/public") }
+    set :views, Proc.new { File.join(root,"views") }
+    set :public_folder, Proc.new { File.join(root,"public") }
     set :static, true
     enable :sessions
     
