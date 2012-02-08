@@ -6,7 +6,6 @@ require 'json'
 
 module Jesus
   class Server < Sinatra::Base
-
     include Jesus::Helpers
     
     dir = File.dirname(File.expand_path(__FILE__))
