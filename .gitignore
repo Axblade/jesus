@@ -5,7 +5,3 @@ pkg/*
 vendor/gems/*
 bin/*
 .bundle
-
-Gemfile.lock
-
-Gemfile.lock

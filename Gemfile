@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 #
 # Required on every environment
 #
-gem "sinatra", ">= 1.2.0"
+gem "sinatra", "~>1.4"
 gem "god"
 gem "json"
 gem "rdiscount"
