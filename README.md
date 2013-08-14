@@ -1,6 +1,11 @@
 Jesus
 =====
 
+[![Build Status](https://travis-ci.org/Axblade/jesus.png)](https://travis-ci.org/Axblade/jesus)
+[![Coverage Status](https://coveralls.io/repos/Axblade/jesus/badge.png)](https://coveralls.io/r/Axblade/jesus)
+[![Dependency Status](https://gemnasium.com/Axblade/jesus.png)](https://gemnasium.com/Axblade/jesus)
+
+
 Jesus is a web interface to [god](http://github.com/mojombo/god)
 It allows you to see the process and monitor/unmonitor them.
 
@@ -12,11 +17,11 @@ Installation
 To install the application you first need to have [bundler](http://github.com/carlhuda/bundler) installed on your machine.
 Once that is done, clone the project in the directory of your choice.
 
-    git clone git://github.com/dmathieu/jesus.git
+    git clone https://github.com/Axblade/jesus.git
 
 Then you should install the dependencies.
 
-    gem bundle
+    bundle update
 
 You now have Jesus available on your machine. Start your god process.
 And start Jesus.

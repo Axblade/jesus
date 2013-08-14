@@ -4,6 +4,12 @@ require "#{dir}/../init"
 
 require 'rack/test'
 require 'rspec'
-require 'mocha'
+
+require 'mocha/setup'
+require 'mocha/api'
+
+require 'coveralls'
+
+Coveralls.wear!
 
 require "support/app"
