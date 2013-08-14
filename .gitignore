@@ -5,3 +5,6 @@ pkg/*
 vendor/gems/*
 bin/*
 .bundle
+
+coverage/*
+coverage
