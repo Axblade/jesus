@@ -1,4 +1,6 @@
 require 'god'
+require 'god/socket'
+require 'drb/drb'
 
 module Jesus
   #
@@ -8,7 +10,7 @@ module Jesus
     attr_reader :server
     
     def initialize
-        @server = DRbObject.new(nil, God::Socket.socket(Jesus.config('god_port')))
+        @server = DRbObject.new(nil, ::God::Socket.socket(Jesus.config('god_port')))
     end
     
     
