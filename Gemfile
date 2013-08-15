@@ -5,7 +5,6 @@ source 'http://rubygems.org'
 gem "sinatra", "~>1.4"
 gem "god"
 gem "json"
-gem "rdiscount"
 gem "rake", "~> 10.1"
 
 
